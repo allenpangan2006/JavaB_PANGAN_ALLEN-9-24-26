@@ -1,84 +1,8 @@
 import java.util.Scanner;
 
 public class Main{
-  public static void main(String[]args){
-    Scanner scanner = new Scanner(System.in);
-
-    int age = 20;
-    double price = 90.45;
-    float weight = 70.6f;
-    char grade = 'B';
-    boolean isStudent = true;
-    String name = "Allen";
-
-    System.out.println("Name: " + name);
-    System.out.println("Age: " + age);
-    System.out.println("Price: " + price);
-    System.out.println("Weight: " + weight);
-    System.out.println("Grade: " + grade);
-    System.out.println("Is student: " + isStudent);
-
-    System.out.print("\nEnter your address: ");
-    String address = scanner.nextLine();
-    System.out.print("You live in " +address);
-    System.out.print ("\nEnter a sentence about Yourself: ");
-    String fullSentence = scanner.nextLine();
-
-    System.out.println("You said: "+ fullSentence);
-
-    int a = 11, b = 5;
-    System.out.println("a + b = " +(a + b));
-    System.out.println("a - b = " +(a - b));
-    System.out.println("a * b = " +(a * b));
-    System.out.println("a / b = " +(a / b));
-    System.out.println("a % b = " +(a % b));
-
-    double x =10, y =3;
-    System.out.println("x / y = " +(x/y));
-
-    //Relational operators (return bool: 1 or 0)
-
-    System.out.println("\na == b = " +(a/b));
-    System.out.println("\na != b = " +(a!=b));
-    System.out.println("\na > b = " +(a>b));
-    System.out.println("\na < b = " +(a<b));
-    System.out.println("\na >= b = " +(a>=b));
-    System.out.println("\na <= b = " +(a<=b));
-
-    boolean p = true, q = false;
-    System.out.println("\np && q: "+(p&&q));//AND
-    System.out.println("p || q: "+(p||q));// OR
-    System.out.println("!p : "+(!p));//NOT true
-    System.out.println("!q: "+(!q));// NOT false
-
-    int score = 50;
-    score += 10;
-    System.out.println("\nscore after the += 10: "+score);
-    score *=2;
-    System.out.println("\nscore after the *= 2: "+score);
-
-    int counter = 5;
-    System.out.println("\ncounter (post): "+counter++);
-    System.out.println("counter now: "+counter++);
-    System.out.println("counter (pre): "+ counter++);
-
-    // Control Flow(if/else, switch case, loops, (for, while, do while))
-    System.out.println("Enter your exam score: ");
-    int ExamScore = scanner.nextInt();
-
-    if (ExamScore >= 90) {
-      System.out.println("Your grade is A!");
-    }else if (ExamScore >= 80){
-      System.out.println("Your grade is B!");
-    }else if (ExamScore >= 70){
-      System.out.println("Your grade is C!");
-    }else {
-      System.out.println("Your grade is D!");
-    }
-    scanner.close();
-
-  }
-} 
+    public static void main(String[]args){
+        Scanner scanner = new Scanner(System.in);
 
 //Switch Case Statement
 System.out.print("\nEnter a day number (1-7)");
@@ -95,50 +19,51 @@ switch (day) {
     default: Sytem.out.println("Invalid day");break;
 
         
-}
-//loops(for, while, do while)
-//for loops 
-System.out.println("\nCounting 1 to 5 with a for loop: ");
-    for(int i = 1;, i<=5;, i++) {
+    }
+    //loops(for, while, do while)
+    //for loops 
+    System.out.println("\nCounting 1 to 5 with a for loop: ");
+    for(int i = 1; i<=5; i++) {
         System.out.print(i + " ");
     }
     System.out.println();
 
-//while loops
-System.out.println("\nCounting down from with a while loop: ");
+    //while loops
+    System.out.println("\nCounting down from with a while loop: ");
     int n = 5;
     while (n > 0){
         System.out.print(n + " ");
         n--;
-}
-System.out.println();
+    }
+    System.out.println();
 
-//do while loops
-System.out.println("\ndo-while example: ");
-int x=0;
-do {
+    //do while loops
+    System.out.println("\ndo-while example: ");
+    int x=0;
+    do {
     System.out.println("x= "+x);
     x++;
-}while (x<3);
+    }while (x<3);
 
-//break and continue
-System.out.println("\nSkipping 3 using continue, stoping at 7 using break: ");
+    //break and continue
+    System.out.println("\nSkipping 3 using continue, stoping at 7 using break: ");
     for(int i = 1; i <= 10; i++){
     if  (i == 3) continue;
-    if (i == 7) break:
+    if (i == 7) break;
     System.out.println(i + " ");
     }
     System.out.println();
-//Methods
-//Takes a double, return its Square
-static double square(double n){
+    }
+    //Methods
+    //Takes a double, return its Square
+    static double square(double n){
     return n*n;
-}
-Takes two ints, for returns their sum
-static int add(int a, int b){
+    }
+
+    Takes two ints, for returns their sum
+    static int add(int a, int b){
     return a + b;
-}
-}
+    }
 //void function: perform an action, return nothing 
 static void greet(String name){
     System.out.println("Hello, "+name+ "! Welcome to Java.");
@@ -317,7 +242,5 @@ public class Main{
         System.out.println("Search result: " + found !=null? found: "not found");
     }
 }
-
-
 
 
